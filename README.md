@@ -1,6 +1,6 @@
 # myslider
 
-This is a basic image slider created using html, css, and javascript.
+This is a basic image slider created using html, css, and vanilla javascript.
 
 The slider is created from a ul element defined on a html page.
 
@@ -36,4 +36,3 @@ MySlider.init(simpson-slider, {
     <li><img src="assets/images/santaslittlehelper.jpg"></li>
   </ul>
 ```
-

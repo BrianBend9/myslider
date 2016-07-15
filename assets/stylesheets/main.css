@@ -1,7 +1,6 @@
 .myslider-wrapper {
   height: 300px;
   width: 100%;
-  background-color: red;
   overflow: hidden; }
   .myslider-wrapper button {
     position: relative;
@@ -25,8 +24,7 @@
   margin: 0px auto;
   padding: 0px;
   text-align: center;
-  position: relative;
-  background-color: green; }
+  position: relative; }
   .myslider li {
     position: absolute;
     height: 100%;
@@ -47,11 +45,6 @@
   left: -1500px; }
 
 .myslider li img.fill-container {
-  width: 100%; }
-
-#test {
-  background-color: orange;
-  height: 100px;
   width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
