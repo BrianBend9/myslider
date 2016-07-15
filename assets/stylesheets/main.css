@@ -1,0 +1,57 @@
+.myslider-wrapper {
+  height: 300px;
+  width: 100%;
+  background-color: red;
+  overflow: hidden; }
+  .myslider-wrapper button {
+    position: relative;
+    height: 80px;
+    font-size: 20px;
+    z-index: 999;
+    top: 50%; }
+
+.next-button {
+  float: left;
+  margin-top: -40px; }
+
+.previous-button {
+  float: right;
+  margin-top: -40px; }
+
+.myslider {
+  list-style-type: none;
+  height: inherit;
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  background-color: green; }
+  .myslider li {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+    left: 1500px;
+    transition: left .5s ease-in-out; }
+    .myslider li img {
+      position: relative;
+      height: inherit;
+      margin: 0 auto; }
+
+.myslider li.active {
+  left: 0px; }
+
+.myslider li.inactive {
+  left: -1500px; }
+
+.myslider li img.fill-container {
+  width: 100%; }
+
+#test {
+  background-color: orange;
+  height: 100px;
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
