@@ -19,11 +19,13 @@ For example:
 
 (.js file)
 ```
-MySlider.init(simpson-slider, {
-"navButtons": true, //to include navigation buttons on slider or not
-"autoPlay": false, //to have the images slide/or transition automatically
-"autoPlayDelay": 5000 //determines the amount of delay between image transitions
-});
+(function(){
+  MySlider.init(simpson-slider, {
+    "navButtons": true, //to include navigation buttons on slider or not
+    "autoPlay": false, //to have the images slide/or transition automatically
+    "autoPlayDelay": 5000 //determines the amount of delay between image transitions
+    });
+})();
 ```
 
 (.html file)

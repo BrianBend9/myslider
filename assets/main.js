@@ -70,7 +70,7 @@ var MySlider = (function() {
       if (event !== undefined && timeoutId !== undefined) {
         MySlider.resetAutoPlayTimer();
       }
-      
+
       if ((event === undefined || event.target.classList.contains("next-button")) && imageIndex === images.length - 1) {
         MySlider.resetAllImagePositions(images);
         imageIndex = 0;
