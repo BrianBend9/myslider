@@ -16,26 +16,26 @@ var MySlider = (function () {
 		var sliderElement = document.getElementById(elementId);
 
 		sliderElementId = elementId;
-		this.addWrapper(sliderElement);
-		this.updateConfig(configObject);
+		addWrapper(sliderElement);
+		updateConfig(configObject);
 		sliderElement.classList.add('myslider');
 		sliderElement.children[imageIndex].classList.add("active");
 
-		if (this.config.navButtons === true) {
-			this.addNavButton("▶", "previous-button", sliderElement);
-			this.addNavButton("◀", "next-button", sliderElement);
-			this.addButtonEventListeners();
+		if (config.navButtons === true) {
+			addNavButton("▶", "previous-button", sliderElement);
+			addNavButton("◀", "next-button", sliderElement);
+			addButtonEventListeners();
 		}
 
-		if (this.config.autoPlay === true) {
-			this.startAutoPlayTimer(this.slide, this.config.autoPlayDelay);
+		if (config.autoPlay === true) {
+			startAutoPlayTimer(slide, config.autoPlayDelay);
 		}
 	};
 
 	var updateConfig = function (newConfigObject) {
 		if (typeof(newConfigObject) === "object") {
 			for (var setting in newConfigObject) {
-				this.config[setting] = newConfigObject[setting];
+				config[setting] = newConfigObject[setting];
 			}
 		}
 	};
@@ -59,7 +59,7 @@ var MySlider = (function () {
 	var addButtonEventListeners = function () {
 		var buttons = document.getElementsByClassName('nav-button');
 		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].addEventListener("click", this.slide, false);
+			buttons[i].addEventListener("click", slide, false);
 		}
 	};
 
