@@ -67,17 +67,17 @@ var MySlider = (function () {
 		var images = document.getElementById(sliderElementId).children;
 
 		if (event !== undefined && timeoutId !== undefined) {
-			MySlider.resetAutoPlayTimer();
+			resetAutoPlayTimer();
 		}
 
 		if ((event === undefined || event.target.classList.contains("next-button")) && imageIndex === images.length - 1) {
-			MySlider.resetAllImagePositions(images);
+			resetAllImagePositions(images);
 			imageIndex = 0;
 			images[imageIndex].classList.add("active");
 		} else if ((event === undefined || event.target.classList.contains("next-button")) && imageIndex < images.length - 1) {
-			MySlider.slideImagesToNextPosition(images);
+			slideImagesToNextPosition(images);
 		} else if (event.target.classList.contains("previous-button") && imageIndex > 0) {
-			MySlider.slideImagesToPreviousPosition(images);
+			slideImagesToPreviousPosition(images);
 		}
 	};
 
@@ -107,7 +107,7 @@ var MySlider = (function () {
 
 	var resetAutoPlayTimer = function () {
 		clearInterval(timeoutId)
-		MySlider.startAutoPlayTimer(MySlider.slide, MySlider.config.autoPlayDelay);
+		startAutoPlayTimer(slide, config.autoPlayDelay);
 	};
 
 	var pulicMethods = {
