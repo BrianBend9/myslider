@@ -111,18 +111,18 @@ var MySlider = (function () {
 	};
 
 	var pulicMethods = {
-		config : config,
+		//config : config,
 		init : init,
-		updateConfig : updateConfig,
-		addWrapper : addWrapper,
-		addNavButton : addNavButton,
-		addButtonEventListeners : addButtonEventListeners,
-		slide : slide,
-		resetAllImagePositions : resetAllImagePositions,
-		slideImagesToPreviousPosition : slideImagesToPreviousPosition,
-		slideImagesToNextPosition : slideImagesToNextPosition,
-		startAutoPlayTimer : startAutoPlayTimer,
-		resetAutoPlayTimer : resetAutoPlayTimer
+		//updateConfig : updateConfig,
+		//addWrapper : addWrapper,
+		//addNavButton : addNavButton,
+		//addButtonEventListeners : addButtonEventListeners,
+		//slide : slide,
+		//resetAllImagePositions : resetAllImagePositions,
+		//slideImagesToPreviousPosition : slideImagesToPreviousPosition,
+		//slideImagesToNextPosition : slideImagesToNextPosition,
+		//startAutoPlayTimer : startAutoPlayTimer,
+		//resetAutoPlayTimer : resetAutoPlayTimer
 	};
 
 	return pulicMethods;
